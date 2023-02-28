@@ -25,5 +25,14 @@ public class Main {
         System.out.println(FirstNonRepeatedCharacter.findFirstChar("hello world!"));
         System.out.println(FirstNonRepeatedCharacter.findFirstChar("!!"));
         System.out.println(FirstNonRepeatedCharacter.firstRepeatedChar("hello world!"));
+
+
+        HashTable table = new HashTable();
+        table.put(6, "Hello World");
+        table.put(6, "Kotlin");
+        table.put(8, "Javac");
+        table.put(11, "JVM");
+        table.remove(8);
+        System.out.println(table.get(6));
     }
 }
