@@ -24,5 +24,6 @@ public class Main {
 
         System.out.println(FirstNonRepeatedCharacter.findFirstChar("hello world!"));
         System.out.println(FirstNonRepeatedCharacter.findFirstChar("!!"));
+        System.out.println(FirstNonRepeatedCharacter.firstRepeatedChar("hello world!"));
     }
 }

@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class FirstNonRepeatedCharacter {
     public static char findFirstChar(String s){
@@ -13,6 +15,15 @@ public class FirstNonRepeatedCharacter {
             if(foundChars.get(ch)==1){
                 return ch;
             }
+        }
+        return Character.MIN_VALUE;
+    }
+    public static char firstRepeatedChar(String s){
+        Set<Character> set = new HashSet<>();
+        for (char ch: s.toCharArray()){
+            if (set.contains(ch))
+                return ch;
+            set.add(ch);
         }
         return Character.MIN_VALUE;
     }
