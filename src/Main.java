@@ -35,4 +35,13 @@ public class Main {
         table.remove(8);
         System.out.println(table.get(6));
     }
+
+    /**
+     * Collision handling
+     * 1. by Chaining
+     * 2. by open addressing
+     *  - linear probing [index = (hash + i)% size]
+     *  - quadratic probing [index = (hash + i^2)% size]
+     *  - Double hashing [index = (hash(key) + i*hash2(key)) % size]
+     */
 }
