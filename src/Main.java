@@ -20,5 +20,9 @@ public class Main {
         for (var item: map.entrySet()){
             System.out.println(item.getValue());
         }
+
+
+        System.out.println(FirstNonRepeatedCharacter.findFirstChar("hello world!"));
+        System.out.println(FirstNonRepeatedCharacter.findFirstChar("!!"));
     }
 }
